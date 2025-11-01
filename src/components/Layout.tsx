@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,11 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <main>
         {children}
       </main>
-      <footer className="py-8 text-center text-sm text-muted-foreground">
-        <div className="container">
-          <p>© {new Date().getFullYear()} Syed Jaleel S. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

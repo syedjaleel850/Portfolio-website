@@ -33,10 +33,10 @@ const Certificates: React.FC = () => {
   ];
 
   return (
-    <section id="certificates" className="py-16 md:py-24">
+    <section id="certificates" className="container mx-auto py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="section-title">Certificates</h2>
+          <h2 className="section-title text-foreground">Certificates</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
           <p className="section-subtitle">
             Continuous learning and professional development credentials
@@ -47,14 +47,14 @@ const Certificates: React.FC = () => {
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl bg-white shadow-sm border border-border/50 hover:border-primary/30 hover:shadow-md transition-all animate-fade-in"
+              className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-4 text-primary">
                 <Award size={32} />
               </div>
               
-              <h3 className="text-lg font-semibold mb-2">{cert.title}</h3>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">{cert.title}</h3>
               <p className="text-muted-foreground mb-4">{cert.issuer}</p>
               
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">

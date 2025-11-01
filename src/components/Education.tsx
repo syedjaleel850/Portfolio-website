@@ -14,21 +14,21 @@ const Education: React.FC = () => {
   const educationItems: EducationItem[] = [
     {
       institution: 'University College of Engineering, Villupuram',
-      degree: 'B.E, Computer Science Engineering',
+      degree: '🎓 B.E, Computer Science Engineering',
       year: '2021 - 2025',
-      grade: 'CGPA: 8.08',
+      grade: 'CGPA: 8.16',
       icon: <GraduationCap size={24} className="text-primary" />,
     },
     {
       institution: 'Government Higher Secondary School, Keelperumpakkam',
-      degree: '12th Grade',
+      degree: '📚 12th Grade',
       year: '2020 - 2021',
       grade: 'Percentage: 91.3%',
       icon: <School size={24} className="text-primary" />,
     },
     {
       institution: 'Railway Mixed High School',
-      degree: '10th Grade',
+      degree: '📚 10th Grade',
       year: '2018 - 2019',
       grade: 'Percentage: 87.8%',
       icon: <School size={24} className="text-primary" />,
@@ -36,10 +36,10 @@ const Education: React.FC = () => {
   ];
 
   return (
-    <section id="education" className="py-16 md:py-24 bg-white/50">
+    <section id="education" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="section-title">Education</h2>
+          <h2 className="section-title text-foreground">Education</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
           <p className="section-subtitle">
             My academic journey and qualifications
@@ -54,17 +54,17 @@ const Education: React.FC = () => {
                 className="relative animate-fade-in" 
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="absolute -left-12 p-2 bg-white rounded-full border-2 border-primary/30">
+                <div className="absolute -left-12 p-2 bg-card rounded-full border-2 border-primary">
                   {item.icon}
                 </div>
                 
-                <div className="p-6 rounded-xl bg-white shadow-sm border border-border/50 hover:border-primary/30 hover:shadow-md transition-all">
+                <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                     <Calendar size={16} />
                     <span>{item.year}</span>
                   </div>
                   
-                  <h3 className="text-xl font-semibold">{item.institution}</h3>
+                  <h3 className="text-xl font-semibold text-foreground">{item.institution}</h3>
                   <p className="text-muted-foreground mb-2">{item.degree}</p>
                   <p className="font-medium text-primary">{item.grade}</p>
                 </div>

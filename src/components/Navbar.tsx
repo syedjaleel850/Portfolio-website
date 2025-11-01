@@ -85,9 +85,12 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
+            
           </nav>
+          
         </div>
       )}
+      
     </header>
   );
 };

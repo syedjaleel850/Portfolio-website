@@ -4,23 +4,21 @@ import { Code2, Lightbulb, Palette, Users } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-white/50">
+    <section id="about" className="py-16 md:py-24 bg-background container mx-auto ">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="section-title">About Me</h2>
+        <div className="max-w-full mx-auto text-center mb-12 flex flex-col items-center">
+          <h2 className="section-title text-foreground">About Me</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
           <p className="section-subtitle">
-            Aspiring Front-End Developer with hands-on experience in HTML5, CSS3, and JavaScript, and foundational knowledge of
-            React.js (currently mastering Hooks and State Management).
+            I started coding by building small projects for myself — simple tools to make my daily tasks easier. That curiosity soon grew into a passion for creating full-stack web apps that solve real-world problems.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6 animate-fade-in">
-            <p className="text-lg">
-              Passionate about building responsive, accessible web interfaces with clean code. Developed practical skills through a web development internship, creating cross-browser-compatible layouts. Eager to contribute to dynamic teams while expanding expertise in modern frameworks like React.
+            <p className="text-lg text-foreground/90 leading-relaxed">
+              I love crafting clean UIs, building efficient APIs, and delivering user-focused digital experiences using technologies like React, Node.js, and MongoDB.
             </p>
-            
             <div>
               <h3 className="text-xl font-semibold mb-3">Location</h3>
               <p>Villupuram, India</p>
@@ -50,35 +48,35 @@ const About: React.FC = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl bg-white shadow-sm border border-border/50 hover:border-primary/30 hover:shadow-md transition-all animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4">
+            <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all animate-fade-in hover:scale-105" style={{ animationDelay: '0.1s' }}>
+              <div className="p-3 bg-primary/20 rounded-lg w-fit mb-4">
                 <Code2 size={24} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Clean Code</h3>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">Clean Code</h3>
               <p className="text-muted-foreground">Writing maintainable, well-structured code that follows best practices.</p>
             </div>
             
-            <div className="p-6 rounded-xl bg-white shadow-sm border border-border/50 hover:border-primary/30 hover:shadow-md transition-all animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4">
+            <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all animate-fade-in hover:scale-105" style={{ animationDelay: '0.2s' }}>
+              <div className="p-3 bg-primary/20 rounded-lg w-fit mb-4">
                 <Palette size={24} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Responsive UI</h3>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">Responsive UI</h3>
               <p className="text-muted-foreground">Designing interfaces that work flawlessly across all devices.</p>
             </div>
             
-            <div className="p-6 rounded-xl bg-white shadow-sm border border-border/50 hover:border-primary/30 hover:shadow-md transition-all animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4">
+            <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all animate-fade-in hover:scale-105" style={{ animationDelay: '0.3s' }}>
+              <div className="p-3 bg-primary/20 rounded-lg w-fit mb-4">
                 <Users size={24} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">Collaboration</h3>
               <p className="text-muted-foreground">Working effectively with teams to deliver exceptional results.</p>
             </div>
             
-            <div className="p-6 rounded-xl bg-white shadow-sm border border-border/50 hover:border-primary/30 hover:shadow-md transition-all animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4">
+            <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all animate-fade-in hover:scale-105" style={{ animationDelay: '0.4s' }}>
+              <div className="p-3 bg-primary/20 rounded-lg w-fit mb-4">
                 <Lightbulb size={24} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Problem Solving</h3>
+              <h3 className="text-xl font-semibold mb-2 text-foreground">Problem Solving</h3>
               <p className="text-muted-foreground">Finding creative solutions to complex technical challenges.</p>
             </div>
           </div>
