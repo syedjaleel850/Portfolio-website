@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
                 <a href="#contact">Hire Me</a>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-md border-border bg-blue-600 hover:bg-blue-700 text-white">
-                <a href="https://drive.google.com/file/d/17cqqaKgh-0mN6MV5mTe41PNbVS0bidSi/view?usp=sharing">Resume</a>
+                <a href="https://drive.google.com/file/d/1xDzyros7tdaT5nY91u3D8POBskkVSNQn/view?usp=drive_link">Resume</a>
               </Button>
             </div>
             
